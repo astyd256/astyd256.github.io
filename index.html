@@ -1,23 +1,2693 @@
+
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>Task 2.15</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
-	</head>
-	<body class="FixedBody">
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="InlineDiv">I'm inline-block!</div>
-		<div class="ClearDiv">There's no need for clear property!</div>
-	</body>
+<html>
+<head>
+    <title>My Movie Collection</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .movie-card {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .movie-card img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Movie Collection</h1>
+    <div class="movie-container">
+
+        <div class="movie-card">
+            <h3>The Lord of the Rings: The Return of the King (2003)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_SX300.jpg" alt="The Lord of the Rings: The Return of the King Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 9.0 / 10</p>
+            <p><b>Genres:</b> Drama, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>No Country for Old Men (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_SX300.jpg" alt="No Country for Old Men Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Thriller, Crime, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Oppenheimer (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_SX300.jpg" alt="Oppenheimer Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Biography, Drama, History</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Better Call Saul (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDdjNTEzMjMtYjM3Mi00NzQ3LWFlNWMtZjdmYWU3ZDkzMjk1XkEyXkFqcGc@._V1_SX300.jpg" alt="Better Call Saul Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 9.0 / 10</p>
+            <p><b>Genres:</b> Crime, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Wolf of Wall Street (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX300.jpg" alt="The Wolf of Wall Street Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Crime, Drama, Biography, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Perfect Blue (1997)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzAwNDIzMzEtZDZkNC00ZDQ4LTk3ZDMtZjVhMTU2YzgzZTZiXkEyXkFqcGc@._V1_SX300.jpg" alt="Perfect Blue Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Animation, Mystery, Crime, Drama, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Serial Experiments Lain (1998)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZGJiMmEyMDMtMTJlZi00YTgwLWI1ODgtZDA1YjEyM2Q5MjI3XkEyXkFqcGc@._V1_SX300.jpg" alt="Serial Experiments Lain Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Animation, Horror, Drama, Sci-Fi, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Breaking Bad (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_SX300.jpg" alt="Breaking Bad Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 9.5 / 10</p>
+            <p><b>Genres:</b> Drama, Crime, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Shawshank Redemption (1994)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_SX300.jpg" alt="The Shawshank Redemption Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 9.3 / 10</p>
+            <p><b>Genres:</b> Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Sherlock (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTQzNGZjNDEtOTMwYi00MzFjLWE2ZTYtYzYxYzMwMjZkZDc5XkEyXkFqcGc@._V1_SX300.jpg" alt="Sherlock Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 9.1 / 10</p>
+            <p><b>Genres:</b> Crime, Mystery, Drama, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Rick and Morty (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZGQyZjk2MzMtMTcyNC00NGU3LTlmNjItNDExMWM4ZDFhYmQ2XkEyXkFqcGc@._V1_SX300.jpg" alt="Rick and Morty Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 9.1 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Catch Me If You Can (2002)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_SX300.jpg" alt="Catch Me If You Can Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Drama, Biography, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>A Beautiful Mind (2001)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzljZTk5ZDgtZTQ1Zi00NTM4LThlOGUtZDk2MGM4NDQ4NWQyXkEyXkFqcGc@._V1_SX300.jpg" alt="A Beautiful Mind Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Biography, Mystery, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>WALL·E (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SX300.jpg" alt="WALL·E Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Animation, Sci-Fi, Adventure, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Fight Club (1999)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_SX300.jpg" alt="Fight Club Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.8 / 10</p>
+            <p><b>Genres:</b> Drama, Crime, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Chernobyl (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMmQ0Y2JiM2EtOWIwMy00MWVjLTgxZDctZTQzOWU3ODkzMWY4XkEyXkFqcGc@._V1_SX300.jpg" alt="Chernobyl Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 9.3 / 10</p>
+            <p><b>Genres:</b> Drama, History, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Dark Knight (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg" alt="The Dark Knight Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 9.0 / 10</p>
+            <p><b>Genres:</b> Drama, Crime, Thriller, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Inception (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg" alt="Inception Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.8 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Thriller, Action, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Matrix (1999)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_SX300.jpg" alt="The Matrix Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.7 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Forrest Gump (1994)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_SX300.jpg" alt="Forrest Gump Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.8 / 10</p>
+            <p><b>Genres:</b> Romance, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Interstellar (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_SX300.jpg" alt="Interstellar Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.7 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Adventure, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Gladiator (2000)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYWQ4YmNjYjEtOWE1Zi00Y2U4LWI4NTAtMTU0MjkxNWQ1ZmJiXkEyXkFqcGc@._V1_SX300.jpg" alt="Gladiator Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Adventure, Drama, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Joker (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzY3OWQ5NDktNWQ2OC00ZjdlLThkMmItMDhhNDk3NTFiZGU4XkEyXkFqcGc@._V1_SX300.jpg" alt="Joker Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Crime, Drama, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Parasite (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_SX300.jpg" alt="Parasite Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 10 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Drama, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Come and See (1985)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDlkZmVkZDAtZGFmMS00OWIzLWJkY2YtNWE5NjNhNjhiZGE3XkEyXkFqcGc@._V1_SX300.jpg" alt="Come and See Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Thriller, Drama, War</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Arcane (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOWJhYjdjNWEtMWFmNC00ZjNkLThlZGEtN2NkM2U3NTVmMjZkXkEyXkFqcGc@._V1_SX300.jpg" alt="Arcane Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 9.0 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Adventure, Drama, Fantasy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Lord of the Rings: The Two Towers (2002)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_SX300.jpg" alt="The Lord of the Rings: The Two Towers Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.8 / 10</p>
+            <p><b>Genres:</b> Drama, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Steins;Gate (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjI1YjZiMDUtZTI3MC00YTA5LWIzMmMtZmQ0NTZiYWM4NTYwXkEyXkFqcGc@._V1_SX300.jpg" alt="Steins;Gate Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.8 / 10</p>
+            <p><b>Genres:</b> Animation, Sci-Fi, Thriller, Comedy, Drama, Romance, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Steins;Gate 0 (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTgzZWY0YmEtNTNlMy00YzU1LWI4NTUtYzBlNzQ0ODkzNzAwXkEyXkFqcGc@._V1_SX300.jpg" alt="Steins;Gate 0 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Animation, Sci-Fi, Thriller, Drama, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Aliens (1986)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjIyNGJhYzYtN2I1My00OTVhLWEyMzItZTVjNDMzOTVkYWViXkEyXkFqcGc@._V1_SX300.jpg" alt="Aliens Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Thriller, Action, Horror, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>American Psycho (2000)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzBjM2I5ZjUtNmIzNy00OGNkLWIwZDMtOTAwYWUwMzA2YjdlXkEyXkFqcGc@._V1_SX300.jpg" alt="American Psycho Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Crime, Horror, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Requiem for a Dream (2000)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2ZlMjIzZjctYzA2My00ZWYyLWI4ZjctMGI2NWYyNzFiZjAwXkEyXkFqcGc@._V1_SX300.jpg" alt="Requiem for a Dream Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Truman Show (1998)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_SX300.jpg" alt="The Truman Show Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Comedy, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Kill Bill: Vol. 1 (2003)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZmMyYzJlZmYtY2I3NC00NjAyLTkyZWItZjdjZDI1YTYyYTEwXkEyXkFqcGc@._V1_SX300.jpg" alt="Kill Bill: Vol. 1 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Neon Genesis Evangelion: The End of Evangelion (1997)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMGI2Y2RiYTctYWIwZi00NjA2LWFmYzYtZDhkNTk1ZGNmNDVmXkEyXkFqcGc@._V1_SX300.jpg" alt="Neon Genesis Evangelion: The End of Evangelion Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Sci-Fi, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Kill Bill: Vol. 2 (2004)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BY2FiNzhiZTctNzU1Mi00NDkwLWExNDMtZTg0MjYyNzhkNWNkXkEyXkFqcGc@._V1_SX300.jpg" alt="Kill Bill: Vol. 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Thriller, Crime, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Shutter Island (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_SX300.jpg" alt="Shutter Island Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Thriller, Mystery, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Platform (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYjUyZjNmYmMtNjA1My00ZWMyLTliZGQtODgzZjIxM2Y4NGI1XkEyXkFqcGc@._V1_SX300.jpg" alt="The Platform Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Thriller, Sci-Fi, Horror, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Pulp Fiction (1994)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_SX300.jpg" alt="Pulp Fiction Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.9 / 10</p>
+            <p><b>Genres:</b> Crime, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Peaky Blinders (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BM2ZiNThlNzItNmY3Ny00NjA2LWJlMjItNTk1NDI3MDMyMTk4XkEyXkFqcGc@._V1_SX300.jpg" alt="Peaky Blinders Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 8.7 / 10</p>
+            <p><b>Genres:</b> Drama, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Electric Dreams (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZGZmMDUxMDgtZmVhOS00YjFlLWJlZjctOWM4MDRjMjQ0ODdhXkEyXkFqcGc@._V1_SX300.jpg" alt="Electric Dreams Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Big Short (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@._V1_SX300.jpg" alt="The Big Short Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Drama, Biography, Comedy, History</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Office (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_SX300.jpg" alt="The Office Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 9.0 / 10</p>
+            <p><b>Genres:</b> Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Godfather Part III (1990)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMDVjODgzNTEtNjBiNS00ODBjLWEwZjUtMDljZTFhOTA4M2MxXkEyXkFqcGc@._V1_SX300.jpg" alt="The Godfather Part III Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Crime, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Godfather Part II (1974)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMDIxMzBlZDktZjMxNy00ZGI4LTgxNDEtYWRlNzRjMjJmOGQ1XkEyXkFqcGc@._V1_SX300.jpg" alt="The Godfather Part II Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 9.0 / 10</p>
+            <p><b>Genres:</b> Crime, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Godfather (1972)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_SX300.jpg" alt="The Godfather Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 9 / 10</p>
+            <p><b>IMDb:</b> 9.2 / 10</p>
+            <p><b>Genres:</b> Crime, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Gentlemen (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjE2ZjQ4ZGMtZjFhMi00NmI5LTliNjEtODczMWMxNjliZjgxXkEyXkFqcGc@._V1_SX300.jpg" alt="The Gentlemen Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Action, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Harry Potter and the Deathly Hallows: Part 2 (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_SX300.jpg" alt="Harry Potter and the Deathly Hallows: Part 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Adventure, Mystery, Fantasy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Ford v Ferrari (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTBjNTEyNjYtYjdkNi00YzE5LTljYzUtZjVlYmYwZmJmZWYxXkEyXkFqcGc@._V1_SX300.jpg" alt="Ford v Ferrari Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Action, Drama, Biography, Sport</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Courier (1986)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYjcwMDkxODctOTlmMS00ZTIwLTlkNjEtNjUzMjAxYWZjOGIwXkEyXkFqcGc@._V1_SX300.jpg" alt="Courier Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Romance, Drama, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Gurren Lagann the Movie: The Lights in the Sky are Stars (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTNkODI4ZmMtZDE0Zi00ZmZmLTkxOGMtZTAxMTUzODgzNGM2XkEyXkFqcGc@._V1_SX300.jpg" alt="Gurren Lagann the Movie: The Lights in the Sky are Stars Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Animation, Drama, Action, Sci-Fi, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Death Parade (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODRkMDEyZTItYjAzNS00Y2E2LThlNGItYjAxZjhjMDlmMjk3XkEyXkFqcGc@._V1_SX300.jpg" alt="Death Parade Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Animation, Drama, Mystery, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Blind Man's Bluff (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjIyNTcwMjEtZDI1OC00NTA2LTkwZjYtOWE5MTE4MzJmOTA0XkEyXkFqcGc@._V1_SX300.jpg" alt="Blind Man's Bluff Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Comedy, Thriller, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Martian (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX300.jpg" alt="The Martian Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Adventure, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Dark Knight Rises (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg" alt="The Dark Knight Rises Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Action, Drama, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Fullmetal Alchemist: Brotherhood (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzNiODA5NjYtYWExZS00OTc4LTg3N2ItYWYwYTUyYmM5MWViXkEyXkFqcGc@._V1_SX300.jpg" alt="Fullmetal Alchemist: Brotherhood Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 9.1 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Adventure, Drama, Sci-Fi, Comedy, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Brother (1997)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjdmMzAxNjEtNjVmOS00ZmRiLWFlYWYtMzdiZGU5OGZiNmJiXkEyXkFqcGc@._V1_SX300.jpg" alt="Brother Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Thriller, Crime, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Lord of the Rings: The Fellowship of the Ring (2001)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_SX300.jpg" alt="The Lord of the Rings: The Fellowship of the Ring Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.9 / 10</p>
+            <p><b>Genres:</b> Drama, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>South Park: Joining the Panderverse (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYmU5ZGNkOWYtM2Q1Mi00N2M3LWE0OGQtOWM3ZmUxODdjZTAyXkEyXkFqcGc@._V1_SX300.jpg" alt="South Park: Joining the Panderverse Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Scavengers Reign (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZmEyOWU1YjctNjgxNS00MTcyLTk3NDgtZmY3ZjBkY2RkN2YxXkEyXkFqcGc@._V1_SX300.jpg" alt="Scavengers Reign Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.6 / 10</p>
+            <p><b>Genres:</b> Animation, Drama, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Brat 2 (2000)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYWNiNWI2ODktMzYzYi00NjFkLThlMTAtYmNiZTg5MmIyZjU4XkEyXkFqcGc@._V1_SX300.jpg" alt="Brat 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Crime, Thriller, Drama, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Back to the Future Part III (1990)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTNkNzJmY2MtOGNjYi00NDJmLWIyZTQtNmFmMGQ5M2VlOTI0XkEyXkFqcGc@._V1_SX300.jpg" alt="Back to the Future Part III Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Adventure, Sci-Fi, Comedy, Western</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Lars and the Real Girl (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZThiOTA4N2UtNzJiYS00MDI0LWI3OWItYzYxYzU3M2YwM2M4XkEyXkFqcGc@._V1_SX300.jpg" alt="Lars and the Real Girl Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Comedy, Drama, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Dune: Part Two (2024)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_SX300.jpg" alt="Dune: Part Two Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Adventure, Drama, Sci-Fi, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Matrix Revolutions (2003)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMmNmMTEzODQtNmExMS00OGUxLWFkNTItMTM3NzBlNDk0YWU5XkEyXkFqcGc@._V1_SX300.jpg" alt="The Matrix Revolutions Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 6.7 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Your Name. (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_SX300.jpg" alt="Your Name. Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Animation, Drama, Romance, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>KILL la KILL (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjlmZTFiZTEtMGYxZS00NGQ3LWI4NjMtNTUxMGFhYTMyYzM2XkEyXkFqcGc@._V1_SX300.jpg" alt="KILL la KILL Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Comedy, Drama, Sci-Fi, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Green Book (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDU5YTNmMmItN2QxNy00OGQ0LTg5MTctNzFmYjEzZjcwN2UwXkEyXkFqcGc@._V1_SX300.jpg" alt="Green Book Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Drama, Biography, Comedy, Music</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Dune: Part One (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNWIyNmU5MGYtZDZmNi00ZjAwLWJlYjgtZTc0ZGIxMDE4ZGYwXkEyXkFqcGc@._V1_SX300.jpg" alt="Dune: Part One Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Adventure, Drama, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Alien: Covenant (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjhiYWQ4MTAtOGY1Zi00ZjcyLTk1ZDYtODI3ODRhNjE4MzZhXkEyXkFqcGc@._V1_SX300.jpg" alt="Alien: Covenant Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 6.4 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Thriller, Horror</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Prometheus (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY3NzIyNTA2NV5BMl5BanBnXkFtZTcwNzE2NjI4Nw@@._V1_SX300.jpg" alt="Prometheus Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Adventure, Sci-Fi, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Slumdog Millionaire (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTE5ZTRkYWEtZmU5MC00NDJjLTk3NmUtZGJlYTM2MmQ3NTJkXkEyXkFqcGc@._V1_SX300.jpg" alt="Slumdog Millionaire Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Drama, Romance, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Alien (1979)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2NhMDk2MmEtZDQzOC00MmY5LThhYzAtMDdjZGFjOGZjMjdjXkEyXkFqcGc@._V1_SX300.jpg" alt="Alien Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Horror, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Harry Potter and the Deathly Hallows: Part 1 (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg" alt="Harry Potter and the Deathly Hallows: Part 1 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.7 / 10</p>
+            <p><b>Genres:</b> Adventure, Mystery, Fantasy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Harry Potter and the Half-Blood Prince (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg" alt="Harry Potter and the Half-Blood Prince Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Action, Fantasy, Mystery, Family, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Harry Potter and the Goblet of Fire (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg" alt="Harry Potter and the Goblet of Fire Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.7 / 10</p>
+            <p><b>Genres:</b> Mystery, Family, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Harry Potter and the Prisoner of Azkaban (2004)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg" alt="Harry Potter and the Prisoner of Azkaban Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.9 / 10</p>
+            <p><b>Genres:</b> Mystery, Family, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Harry Potter and the Chamber of Secrets (2002)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX300.jpg" alt="Harry Potter and the Chamber of Secrets Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Mystery, Family, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Harry Potter and the Sorcerer's Stone (2001)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg" alt="Harry Potter and the Sorcerer's Stone Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.7 / 10</p>
+            <p><b>Genres:</b> Family, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Queen's Gambit (2020)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMmRlNjQxNWQtMjk1OS00N2QxLTk0YWQtMzRhYjY5YTFhNjMxXkEyXkFqcGc@._V1_SX300.jpg" alt="The Queen's Gambit Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Boys (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMWJlN2U5MzItNjU4My00NTM2LWFjOWUtOWFiNjg3ZTMxZDY1XkEyXkFqcGc@._V1_SX300.jpg" alt="The Boys Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.6 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Crime, Drama, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Cyberpunk: Edgerunners (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BM2JkMzM2ZmYtNWU4MS00MjZhLWFhZWUtYWFjYTJkN2RhZDliXkEyXkFqcGc@._V1_SX300.jpg" alt="Cyberpunk: Edgerunners Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Animation, Sci-Fi, Action, Crime, Adventure, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Death Note (2006)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@._V1_SX300.jpg" alt="Death Note Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.9 / 10</p>
+            <p><b>Genres:</b> Animation, Mystery, Crime, Thriller, Fantasy, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>South Park (1997)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTBlMzA3ZTUtODZjNi00NTM0LWExMjMtNjJhYzA3YTkwMWYwXkEyXkFqcGc@._V1_SX300.jpg" alt="South Park Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.7 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Gurren Lagann (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMGJlODA2ZmItOTRiZS00NWM5LWJlNTQtYzI5MTNiZjA2MGFjXkEyXkFqcGc@._V1_SX300.jpg" alt="Gurren Lagann Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Comedy, Drama, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Back to the Future Part II (1989)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTNlOTRmOTEtMTAyMi00NjFiLTk3NDMtNWI0YzA3ZTZlYjZiXkEyXkFqcGc@._V1_SX300.jpg" alt="Back to the Future Part II Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Adventure, Sci-Fi, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Fifth Element (1997)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODU4ZTE5MWYtNmY2MC00NDkyLTk0NDgtNTk5YjgzMzc4NmQwXkEyXkFqcGc@._V1_SX300.jpg" alt="The Fifth Element Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Adventure, Sci-Fi, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Spirited Away (2001)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_SX300.jpg" alt="Spirited Away Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.6 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Mystery, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Incredibles (2004)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SX300.jpg" alt="The Incredibles Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Adventure, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Green Mile (1999)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_SX300.jpg" alt="The Green Mile Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.6 / 10</p>
+            <p><b>Genres:</b> Crime, Fantasy, Mystery, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Klaus (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZDA4ODhlMzctNGRmYi00NmViLTkxZGYtZjRkNGQ5YzYwYWVlXkEyXkFqcGc@._V1_SX300.jpg" alt="Klaus Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Evangelion: 3.0+1.01 Thrice Upon a Time (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BY2EwOWZkNzgtMWIzNy00ZTUyLWJmMjYtMjk0MTEwY2MzZWZlXkEyXkFqcGc@._V1_SX300.jpg" alt="Evangelion: 3.0+1.01 Thrice Upon a Time Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Drama, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>One Punch Man (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzMwOGQ5MWItNzE3My00ZDYyLTk4NzAtZWIyYWI0NTZhYzY0XkEyXkFqcGc@._V1_SX300.jpg" alt="One Punch Man Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.7 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Comedy, Sci-Fi, Fantasy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Made in Abyss (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjM4ODA5YTktNjliMC00NzI5LTk3ZTctZWYyYWEyNTJhMmQzXkEyXkFqcGc@._V1_SX300.jpg" alt="Made in Abyss Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Fantasy, Sci-Fi, Drama, Mystery, Action, Horror</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Back to the Future (1985)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZmM3ZjE0NzctNjBiOC00MDZmLTgzMTUtNGVlOWFlOTNiZDJiXkEyXkFqcGc@._V1_SX300.jpg" alt="Back to the Future Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Comedy, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Chainsaw Man (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZGY2ZTM2MWMtNzA2OS00ZjJlLWIwZTMtMDBhN2EwYjZjZjEyXkEyXkFqcGc@._V1_SX300.jpg" alt="Chainsaw Man Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Great Gatsby (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTkxNTk1ODcxNl5BMl5BanBnXkFtZTcwMDI1OTMzOQ@@._V1_SX300.jpg" alt="The Great Gatsby Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Drama, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Edge of Tomorrow (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc5OTk4MTM3M15BMl5BanBnXkFtZTgwODcxNjg3MDE@._V1_SX300.jpg" alt="Edge of Tomorrow Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.9 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Puss in Boots: The Last Wish (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzg0MWUzMjctYjVlOS00NzVjLWIwZDMtNzg1YzNkYzdjNTMwXkEyXkFqcGc@._V1_SX300.jpg" alt="Puss in Boots: The Last Wish Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Comedy, Fantasy, Adventure, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Spider-Man 2 (2004)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNGQ0YTQyYTgtNWI2YS00NTE2LWJmNDItNTFlMTUwNmFlZTM0XkEyXkFqcGc@._V1_SX300.jpg" alt="Spider-Man 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Adventure, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Coraline (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzQxNjM5NzkxNV5BMl5BanBnXkFtZTcwMzg5NDMwMg@@._V1_SX300.jpg" alt="Coraline Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Animation, Fantasy, Drama, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Irishman (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY2YThkNmQtOWJhYy00ZDc3LWEzOGEtMmQwNzM0YjFmZWIyXkEyXkFqcGc@._V1_SX300.jpg" alt="The Irishman Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Crime, Drama, Biography, History, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Up (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNmI1ZTc5MWMtMDYyOS00ZDc2LTkzOTAtNjQ4NWIxNjYyNDgzXkEyXkFqcGc@._V1_SX300.jpg" alt="Up Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Adventure, Comedy, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Lego Movie (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTg4MDk1ODExN15BMl5BanBnXkFtZTgwNzIyNjg3MDE@._V1_SX300.jpg" alt="The Lego Movie Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.7 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Adventure, Fantasy, Sci-Fi, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Batman (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_SX300.jpg" alt="The Batman Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Action, Crime, Drama, Thriller, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Real Steel (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjEzMzEzNjg0N15BMl5BanBnXkFtZTcwMzg4NDk0Ng@@._V1_SX300.jpg" alt="Real Steel Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.1 / 10</p>
+            <p><b>Genres:</b> Drama, Sci-Fi, Sport, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Blade Runner 2049 (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX300.jpg" alt="Blade Runner 2049 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Thriller, Action, Drama, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Die Hard (1988)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg" alt="Die Hard Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Thriller, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Terminator 2: Judgment Day (1991)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNGMyMGNkMDUtMjc2Ni00NWFlLTgyODEtZTY2MzBiZTg0OWZiXkEyXkFqcGc@._V1_SX300.jpg" alt="Terminator 2: Judgment Day Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.6 / 10</p>
+            <p><b>Genres:</b> Adventure, Sci-Fi, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Fullmetal Alchemist (2003)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDczZWMyMjEtZDI0ZS00YThjLWE2MjEtNTIxNmVmZDhkNDg5XkEyXkFqcGc@._V1_SX300.jpg" alt="Fullmetal Alchemist Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Sci-Fi, Drama, Fantasy, Action, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Goodfellas (1990)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2E5NzI2ZGMtY2VjNi00YTRjLWI1MDUtZGY5OWU1MWJjZjRjXkEyXkFqcGc@._V1_SX300.jpg" alt="Goodfellas Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.7 / 10</p>
+            <p><b>Genres:</b> Biography, Crime, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Tokyo Ghoul (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZWI2NzZhMTItOTM3OS00NjcyLThmN2EtZGZjMjlhYWMwODMzXkEyXkFqcGc@._V1_SX300.jpg" alt="Tokyo Ghoul Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.7 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Drama, Fantasy, Horror, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Noragami (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODhhZDgxM2EtZjZhYy00ZThkLTk2NDMtNGE0YjJlMWVlMDU1XkEyXkFqcGc@._V1_SX300.jpg" alt="Noragami Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Animation, Fantasy, Comedy, Adventure, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Deadpool (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzY3ZWU5NGQtOTViNC00ZWVmLTliNjAtNzViNzlkZWQ4YzQ4XkEyXkFqcGc@._V1_SX300.jpg" alt="Deadpool Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Avengers (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_SX300.jpg" alt="The Avengers Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Doctor Strange (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg" alt="Doctor Strange Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Fantasy, Adventure, Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Iron Man (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg" alt="Iron Man Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.9 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Mr. Robot (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTg4NTBiZDAtZTc0YS00NzZlLTg4Y2ItNGQ3M2ZlMDM5MWQzXkEyXkFqcGc@._V1_SX300.jpg" alt="Mr. Robot Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Crime, Drama, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Neon Genesis Evangelion (1995)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjZjZGI3ZDQtODNmZC00NjE0LTlmYTUtOTljMWI2YjNmMTQ0XkEyXkFqcGc@._V1_SX300.jpg" alt="Neon Genesis Evangelion Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Animation, Drama, Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>La La Land (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SX300.jpg" alt="La La Land Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Musical, Comedy, Drama, Romance, Music</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Her (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjA1Nzk0OTM2OF5BMl5BanBnXkFtZTgwNjU2NjEwMDE@._V1_SX300.jpg" alt="Her Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Romance, Sci-Fi, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Shrek 2 (2004)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzNmNjQ1NmUtNzhiZS00YWE2LTg4N2ItZTA2ODdmOTMwOTQ1XkEyXkFqcGc@._V1_SX300.jpg" alt="Shrek 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Animation, Romance, Comedy, Family, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Once Upon a Time... in Hollywood (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzMzNmViNjYtN2ViNi00NDM3LWFlMmItNDYyMGIzY2EzZjE2XkEyXkFqcGc@._V1_SX300.jpg" alt="Once Upon a Time... in Hollywood Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Drama, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Shrek (2001)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2FkMTRkNTUtYTI0NC00ZjI4LWI5MzUtMDFmOGY0NmU2OGY1XkEyXkFqcGc@._V1_SX300.jpg" alt="Shrek Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 7.9 / 10</p>
+            <p><b>Genres:</b> Animation, Fantasy, Comedy, Family, Adventure, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Howl's Moving Castle (2004)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY1OTg0MjE3MV5BMl5BanBnXkFtZTcwNTUxMTkyMQ@@._V1_SX300.jpg" alt="Howl's Moving Castle Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Finding Nemo (2003)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc5NjExNTA5OV5BMl5BanBnXkFtZTYwMTQ0ODY2._V1_SX300.jpg" alt="Finding Nemo Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Comedy, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Avengers: Infinity War (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg" alt="Avengers: Infinity War Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 8 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Spider-Man: Into the Spider-Verse (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_SX300.jpg" alt="Spider-Man: Into the Spider-Verse Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Sci-Fi, Adventure, Family, Comedy, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>No Game, No Life (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTk5ZDZhNGUtMDM2OS00Y2RkLWEwMmQtODg4ZTZiMGY1ZjFjXkEyXkFqcGc@._V1_SX300.jpg" alt="No Game, No Life Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Fantasy, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Kizumonogatari Part 1: Tekketsu (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMWU2NjVhOWMtOGQwNS00ZWViLThhODMtMzE5MjhkMTBiNDQwXkEyXkFqcGc@._V1_SX300.jpg" alt="Kizumonogatari Part 1: Tekketsu Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Comedy, Fantasy, Romance, Horror, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Fast X (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYzEwZjczOTktYzU1OS00YjJlLTgyY2UtNWEzODBlN2RjZDEwXkEyXkFqcGc@._V1_SX300.jpg" alt="Fast X Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 5.7 / 10</p>
+            <p><b>Genres:</b> Action, Crime, Thriller, Mystery, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Watchmen (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYmJiNTUwYWUtZDllNi00ODdjLWFmNTEtOTVlNmYxYTZhNzYzXkEyXkFqcGc@._V1_SX300.jpg" alt="Watchmen Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Action, Mystery, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>John Wick (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg" alt="John Wick Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Mission: Impossible - Dead Reckoning Part One (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2U4OTdmM2QtZTkxYy00ZmQyLTg2N2UtMDdmMGJmNDhlZDU1XkEyXkFqcGc@._V1_SX300.jpg" alt="Mission: Impossible - Dead Reckoning Part One Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>John Wick: Chapter 4 (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BY2Q2ZmI5ZjUtNWVhMC00YzJkLTlmYjMtY2RmZDhkNzEzYjZhXkEyXkFqcGc@._V1_SX300.jpg" alt="John Wick: Chapter 4 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Action, Crime, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>My Hero Academia (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzgxMzI3NzgtYzE2Zi00MzlmLThlNWEtNWVmZWEyZjNkZWYyXkEyXkFqcGc@._V1_SX300.jpg" alt="My Hero Academia Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Fantasy, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Incredibles 2 (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTEzNzY0OTg0NTdeQTJeQWpwZ15BbWU4MDU3OTg3MjUz._V1_SX300.jpg" alt="Incredibles 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Adventure, Family, Sci-Fi, Comedy, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Toy Story 3 (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SX300.jpg" alt="Toy Story 3 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Phineas and Ferb (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc1NjcxNzg4MF5BMl5BanBnXkFtZTgwOTMzNzgyMDE@._V1_SX300.jpg" alt="Phineas and Ferb Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Animation, Musical, Short, Comedy, Family, Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Mob Psycho 100 (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYzU3NDM4ZjgtY2UyMi00YTczLTgyNDEtMjBiMDJlOGUxNjcxXkEyXkFqcGc@._V1_SX300.jpg" alt="Mob Psycho 100 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Horror, Comedy, Fantasy, Drama, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Monsters, Inc. (2001)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY1NTI0ODUyOF5BMl5BanBnXkFtZTgwNTEyNjQ0MDE@._V1_SX300.jpg" alt="Monsters, Inc. Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Code Geass (2006)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTk4MWYwNmUtODFjNC00NWJhLWExNGYtMGU4YmRlNzEwOTY1XkEyXkFqcGc@._V1_SX300.jpg" alt="Code Geass Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.7 / 10</p>
+            <p><b>Genres:</b> Animation, Sci-Fi, Action, Drama, Thriller, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Cowboy Bebop (1998)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTU3ZTdiOGQtYmYwYy00OGM5LThmNjMtZGJmNTVlZjk1ZmEyXkEyXkFqcGc@._V1_SX300.jpg" alt="Cowboy Bebop Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.9 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Drama, Comedy, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Toy Story (1995)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_SX300.jpg" alt="Toy Story Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.3 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Thor: Ragnarok (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_SX300.jpg" alt="Thor: Ragnarok Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.9 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure, Comedy, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Coco (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMDIyM2E2NTAtMzlhNy00ZGUxLWI1NjgtZDY5MzhiMDc5NGU3XkEyXkFqcGc@._V1_SX300.jpg" alt="Coco Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Adventure, Fantasy, Mystery, Music, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>WandaVision (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTMxMmM1ODItMTZiMS00NjI1LWEwODctMjQ4ZjY4ODliNDI0XkEyXkFqcGc@._V1_SX300.jpg" alt="WandaVision Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.9 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Drama, Fantasy, Comedy, Romance, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Zootopia (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTMyMjEyNzIzMV5BMl5BanBnXkFtZTgwNzIyNjU0NzE@._V1_SX300.jpg" alt="Zootopia Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Animation, Crime, Action, Mystery, Adventure, Family, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Harry Potter and the Order of the Phoenix (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYWJmM2M1YzItMjY1Ni00YzRmLTg5YWYtNDFmNTJjNzQ0ODkyXkEyXkFqcGc@._V1_SX300.jpg" alt="Harry Potter and the Order of the Phoenix Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Action, Family, Fantasy, Mystery, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Doki Doki Literature Club! (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYjY5OWFmZTQtZmE1MS00NTM2LTlkNWEtZDY4NWU2ZDYwMTAyXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_SX300.jpg" alt="Doki Doki Literature Club! Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Drama, Horror, Romance, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Cuphead Show! (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZDA2Zjg3YmEtNGIzMS00YjM3LWJmZmUtNTc2ZDYzY2U5OTdlXkEyXkFqcGc@._V1_SX300.jpg" alt="The Cuphead Show! Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Animation, Musical, Short, Action, Adventure, Comedy, Family, Fantasy, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Bakemonogatari (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzc2ODJmZDItNDJkYS00OWIyLTg1YWYtMmRmZjJkZDdlMTUwXkEyXkFqcGc@._V1_SX300.jpg" alt="Bakemonogatari Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Comedy, Drama, Fantasy, Romance, Mystery, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Promised Neverland (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMGQ4ZGJhZTUtZDQ5Mi00NTI1LWEyYjItMzIxM2VlNmY4MDEyXkEyXkFqcGc@._V1_SX300.jpg" alt="The Promised Neverland Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Animation, Mystery, Thriller, Sci-Fi, Adventure, Drama, Fantasy, Horror, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Wreck-It Ralph (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzMxNTExOTkyMF5BMl5BanBnXkFtZTcwMzEyNDc0OA@@._V1_SX300.jpg" alt="Wreck-It Ralph Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.7 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Adventure, Fantasy, Sci-Fi, Sport</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Captain America: The First Avenger (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzUyM2YyY2MtNzNlMS00MWU5LTgxNjAtNzZlNmI2NjU2NDZlXkEyXkFqcGc@._V1_SX300.jpg" alt="Captain America: The First Avenger Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.9 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Gravity Falls (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTEzNDc3MDQ2NzNeQTJeQWpwZ15BbWU4MDYzMzUwMDIx._V1_SX300.jpg" alt="Gravity Falls Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.9 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Titanic (1997)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_SX300.jpg" alt="Titanic Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.9 / 10</p>
+            <p><b>Genres:</b> Romance, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>JoJo's Bizarre Adventure (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzIyNzY4NTMtNmVhYS00OWFhLTkwMWMtOGFkNTdmNWU2ZDdiXkEyXkFqcGc@._V1_SX300.jpg" alt="JoJo's Bizarre Adventure Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Horror, Action, Fantasy, Drama, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Spider-Man: Across the Spider-Verse (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNThiZjA3MjItZGY5Ni00ZmJhLWEwN2EtOTBlYTA4Y2E0M2ZmXkEyXkFqcGc@._V1_SX300.jpg" alt="Spider-Man: Across the Spider-Verse Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Adventure, Sci-Fi, Fantasy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Spider-Man: No Way Home (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_SX300.jpg" alt="Spider-Man: No Way Home Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Invincible (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjE4ZDU4ZjMtZjliYS00M2ZmLThkNTItN2U3MmJjOGU0NmIxXkEyXkFqcGc@._V1_SX300.jpg" alt="Invincible Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.7 / 10</p>
+            <p><b>Genres:</b> Animation, Sci-Fi, Action, Drama, Adventure, Fantasy, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Monkey Man (2024)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTJlNzY5OTAtNjIxNi00MTUxLWJkZjEtZDcxYTg2YWY0MjZkXkEyXkFqcGc@._V1_SX300.jpg" alt="Monkey Man Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.8 / 10</p>
+            <p><b>Genres:</b> Thriller, Action, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Matrix Reloaded (2003)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjAxYjkxNjktYTU0YS00NjFhLWIyMDEtMzEzMTJjMzRkMzQ1XkEyXkFqcGc@._V1_SX300.jpg" alt="The Matrix Reloaded Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>El Camino (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYTYxMjI2YzUtODQ5Mi00M2JmLTlmNzItOTlkM2MyM2ExM2RlXkEyXkFqcGc@._V1_SX300.jpg" alt="El Camino Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Drama, Crime, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Men in Black (1997)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZmQ0YTdhYzEtMjIxZC00MGFiLTlmNjktZmFlOWE2M2QxOTRhXkEyXkFqcGc@._V1_SX300.jpg" alt="Men in Black Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Adventure, Action, Sci-Fi, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Nobody (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYmIzOWViNDEtOWRiZS00ZWM4LWFiMmEtNGJjMmQ3NTIxN2U0XkEyXkFqcGc@._V1_SX300.jpg" alt="Nobody Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Action, Crime, Thriller, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Chicken Run: Dawn of the Nugget (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTMwN2Y0MDYtYzhhZS00YzI5LWE5N2UtOThlZWQxODc4YjkxXkEyXkFqcGc@._V1_SX300.jpg" alt="Chicken Run: Dawn of the Nugget Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.3 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Cloudy with a Chance of Meatballs (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTg0MjAwNDI5MV5BMl5BanBnXkFtZTcwODkyMzg2Mg@@._V1_SX300.jpg" alt="Cloudy with a Chance of Meatballs Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.9 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Comedy, Sci-Fi, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Bolt (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY3NGVkMmItYWNjMy00MmE0LTlkZmUtNGIxZGJmZTA1YWI0XkEyXkFqcGc@._V1_SX300.jpg" alt="Bolt Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.8 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Comedy, Adventure, Crime, Drama, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Over the Hedge (2006)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2ZiYjQ2ZDctMDI3Yy00YmViLWEyMGYtZTYxMmE2MGM5Y2M5XkEyXkFqcGc@._V1_SX300.jpg" alt="Over the Hedge Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.7 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Adventure, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Robots (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDYyNjY1NjY1M15BMl5BanBnXkFtZTcwNjk5MDczMw@@._V1_SX300.jpg" alt="Robots Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.4 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Sci-Fi, Adventure, Romance, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Chicken Run (2000)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTc3YTRlMWMtMWIxMC00Njk2LTg0MjktNWVjNTUzOTViZmNhXkEyXkFqcGc@._V1_SX300.jpg" alt="Chicken Run Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.1 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Drama, Comedy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Wallace & Gromit: The Curse of the Were-Rabbit (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BM2JkOTRkZTctN2ZiMy00ZGRmLWJkNzQtOGJkNmFiM2ZjNjYzXkEyXkFqcGc@._V1_SX300.jpg" alt="Wallace & Gromit: The Curse of the Were-Rabbit Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Mystery, Sci-Fi, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Ready Player One (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzVkMTgzODQtMWIwZC00NzE4LTgzZjYtMzAwM2I5OGZhNjE4XkEyXkFqcGc@._V1_SX300.jpg" alt="Ready Player One Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Action, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Guardians of the Galaxy Vol. 2 (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNWE5MGI3MDctMmU5Ni00YzI2LWEzMTQtZGIyZDA5MzQzNDBhXkEyXkFqcGc@._V1_SX300.jpg" alt="Guardians of the Galaxy Vol. 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Violet Evergarden (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMWUwNDFiNjQtYjQ0MC00MTcxLWE0MGQtNTdkYTlhZGU2NDFmXkEyXkFqcGc@._V1_SX300.jpg" alt="Violet Evergarden Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Animation, Drama, Sci-Fi, Fantasy, Romance, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Deadpool 2 (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNGY3N2ZhYmMtYTlmYi00ZWIzLWJiZWMtMjgxMjljYTk3MDAwXkEyXkFqcGc@._V1_SX300.jpg" alt="Deadpool 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Comedy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Guardians of the Galaxy (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BM2ZmNjQ2MzAtNDlhNi00MmQyLWJhZDMtNmJiMjFlOWY4MzcxXkEyXkFqcGc@._V1_SX300.jpg" alt="Guardians of the Galaxy Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Action, Adventure, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Spider-Man 3 (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODE2NzNhMDctYjUzMC00Y2M5LWI2Y2EtODJkZTFjN2Y5ODlmXkEyXkFqcGc@._V1_SX300.jpg" alt="Spider-Man 3 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.3 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Wasabi (2001)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTg1MTk5YmMtOTMxMC00Yzk4LWFiMjUtZDY2NDk5YjJjNzYyXkEyXkFqcGc@._V1_SX300.jpg" alt="Wasabi Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Crime, Thriller, Drama, Comedy, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Taxi 2 (2000)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYzBjNDE0YmUtZTIxZS00YzJkLTlhMzAtNjQ4OTExNDQ4YzhlXkEyXkFqcGc@._V1_SX300.jpg" alt="Taxi 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Crime, Comedy, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Taxi (1998)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTlkM2EzOTAtMTgzZi00NDEyLWJjOGItYWJiYTE2NmRlODMwXkEyXkFqcGc@._V1_SX300.jpg" alt="Taxi Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Crime, Comedy, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Loki (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BM2FiMjQ0ZjAtYzc1OC00NzgzLWIyNmQtYmIwYjdhZWM5MmRiXkEyXkFqcGc@._V1_SX300.jpg" alt="Loki Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.2 / 10</p>
+            <p><b>Genres:</b> Fantasy, Sci-Fi, Action, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Toy Story 2 (1999)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzVmODlhMDEtY2YxZi00OTVjLTlkNTktN2Q2OTRlM2I4M2FhXkEyXkFqcGc@._V1_SX300.jpg" alt="Toy Story 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.9 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Spider-Man (2002)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZWM0OWVmNTEtNWVkOS00MzgyLTkyMzgtMmE2ZTZiNjY4MmFiXkEyXkFqcGc@._V1_SX300.jpg" alt="Spider-Man Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Adventure, Sci-Fi, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Hunger Games (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMWI1OGM4YjQtNmIxNi00YmE2LWJkNTAtY2Q0YjU4NTI5NWQyXkEyXkFqcGc@._V1_SX300.jpg" alt="The Hunger Games Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Adventure, Sci-Fi, Thriller, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Shrek Forever After (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY0OTU1NzkxMl5BMl5BanBnXkFtZTcwMzI2NDUzMw@@._V1_SX300.jpg" alt="Shrek Forever After Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.3 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Adventure, Family, Fantasy, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Mr. & Mrs. Smith (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUxMzcxNzQzOF5BMl5BanBnXkFtZTcwMzQxNjUyMw@@._V1_SX300.jpg" alt="Mr. & Mrs. Smith Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Comedy, Crime, Thriller, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Rango (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc4NjEyODE1OV5BMl5BanBnXkFtZTcwMjYzNTkxNA@@._V1_SX300.jpg" alt="Rango Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Family, Western, Comedy, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Kick-Ass (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTMzNzEzMDYxM15BMl5BanBnXkFtZTcwMTc0NTMxMw@@._V1_SX300.jpg" alt="Kick-Ass Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Comedy, Action, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Kung Fu Panda (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZDU5MDNiMGItYjVmZi00NDUxLTg2OTktNGE0NzNlNzM4NzgyXkEyXkFqcGc@._V1_SX300.jpg" alt="Kung Fu Panda Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Action, Adventure, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Kung Fu Panda 3 (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE@._V1_SX300.jpg" alt="Kung Fu Panda 3 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.1 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Action, Adventure, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Kung Fu Panda 2 (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYmIxMGYzMTUtZDQzYy00ODc4LWE1YzQtZGMwYTc0YTYyYTE0XkEyXkFqcGc@._V1_SX300.jpg" alt="Kung Fu Panda 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Action, Family, Adventure, Fantasy, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Inside Out (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTgxMDQwMDk0OF5BMl5BanBnXkFtZTgwNjU5OTg2NDE@._V1_SX300.jpg" alt="Inside Out Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Adventure, Drama, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Despicable Me (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY3NjY0MTQ0Nl5BMl5BanBnXkFtZTcwMzQ2MTc0Mw@@._V1_SX300.jpg" alt="Despicable Me Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.6 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Comedy, Sci-Fi, Crime, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Bee Movie (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjE1MDYxOTA4MF5BMl5BanBnXkFtZTcwMDE0MDUzMw@@._V1_SX300.jpg" alt="Bee Movie Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.1 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Adventure, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Meet the Robinsons (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjVjY2E5MWYtZDZmNy00NzllLThlNzEtMmQ4MjExNTIxZDUzXkEyXkFqcGc@._V1_SX300.jpg" alt="Meet the Robinsons Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.8 / 10</p>
+            <p><b>Genres:</b> Animation, Musical, Adventure, Family, Comedy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Rise of the Guardians (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTkzMjgwMDg1M15BMl5BanBnXkFtZTcwMTgzNTI1OA@@._V1_SX300.jpg" alt="Rise of the Guardians Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Fantasy, Action, Drama, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Puss in Boots (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTQwMGU5YTEtYmQzMy00MTM0LWFhNzAtOGY2Yzc1MzBkYTYyXkEyXkFqcGc@._V1_SX300.jpg" alt="Puss in Boots Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Fantasy, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>As Above, So Below: The Underworld of 'John Wick' (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNmM2YmY2MzgtZTViNC00NGQxLWE5ZjEtNjFjZmUxZTBkN2Q1XkEyXkFqcGdeQXVyODA1NjQ0OTY@._V1_SX300.jpg" alt="As Above, So Below: The Underworld of 'John Wick' Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.7 / 10</p>
+            <p><b>Genres:</b> Documentary, Short</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Avatar (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_SX300.jpg" alt="Avatar Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.9 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Action, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Matrix Resurrections (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMDMyNDIzYzMtZTMyMy00NjUyLWI3Y2MtYzYzOGE1NzQ1MTBiXkEyXkFqcGc@._V1_SX300.jpg" alt="The Matrix Resurrections Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 5.6 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Transformers (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjM3ZDA2YmItMzhiMi00ZGI3LTg3ZGQtOTk3Nzk0MDY0ZDZhXkEyXkFqcGc@._V1_SX300.jpg" alt="Transformers Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.1 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Family Guy (1999)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTZlMGQ1YjEtMzVlNC00ZmMxLTk0MzgtZjdkYTU1NmUxNTQ0XkEyXkFqcGc@._V1_SX300.jpg" alt="Family Guy Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>TMNT (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjE1MzcwNTE5OV5BMl5BanBnXkFtZTcwMTIxNzQ0MQ@@._V1_SX300.jpg" alt="TMNT Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.2 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Adventure, Comedy, Sci-Fi, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Wrath of Man (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODE4ZGY4OTktNDBjMy00NGVkLTk5YWUtNjA3NGU3MTA5NzM0XkEyXkFqcGc@._V1_SX300.jpg" alt="Wrath of Man Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.1 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>South Park: Post COVID - The Return of COVID (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BY2ZlNTE1YzgtMmIzYi00ZDg5LTllNzktNDg0OTEyZDIxMmQ0XkEyXkFqcGc@._V1_SX300.jpg" alt="South Park: Post COVID - The Return of COVID Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Iron Man 2 (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYWYyOGQzOGYtMGQ1My00ZWYxLTgzZjktZWYzN2IwYjkxYzM0XkEyXkFqcGc@._V1_SX300.jpg" alt="Iron Man 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.9 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Tokyo Ghoul: Root A (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNWM0YzVjY2QtOTQ1ZS00NDAyLWJiMDQtMDM1ZjU5MTg0NTZiXkEyXkFqcGc@._V1_SX300.jpg" alt="Tokyo Ghoul: Root A Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Drama, Horror, Fantasy, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>No Time to Die (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZGZiOGZhZDQtZmRkNy00ZmUzLTliMGEtZGU0NjExOGMxZDVkXkEyXkFqcGc@._V1_SX300.jpg" alt="No Time to Die Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Thor (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjRhNGZjZjEtYTQzYS00OWUxLThjNGEtMTIwMTE2ZDFlZTZkXkEyXkFqcGc@._V1_SX300.jpg" alt="Thor Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Action, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Iron Man 3 (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjIzMzAzMjQyM15BMl5BanBnXkFtZTcwNzM2NjcyOQ@@._V1_SX300.jpg" alt="Iron Man 3 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.1 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Captain America: The Winter Soldier (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNWY1NjFmNDItZDhmOC00NjI1LWE0ZDItMTM0MjBjZThiOTQ2XkEyXkFqcGc@._V1_SX300.jpg" alt="Captain America: The Winter Soldier Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.7 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Ant-Man (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_SX300.jpg" alt="Ant-Man Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Spider-Man: Homecoming (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODY2MTAzOTQ4M15BMl5BanBnXkFtZTgwNzg5MTE0MjI@._V1_SX300.jpg" alt="Spider-Man: Homecoming Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Avengers: Age of Ultron (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODBhYTg1NGQtNGVmNS00ZTdiLThjYTYtZDFkNzRiNTZmNDZjXkEyXkFqcGc@._V1_SX300.jpg" alt="Avengers: Age of Ultron Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Spider-Man: Far from Home (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzNhNTE0NWQtN2E1Ny00NjcwLTg1YTctMGY1NmMwODJmY2NmXkEyXkFqcGc@._V1_SX300.jpg" alt="Spider-Man: Far from Home Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi, Comedy, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>F9: The Fast Saga (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODJkMTQ5ZmQtNzQxYy00ZWNlLWI0ZGYtYjU1NzdiMjcyNDRmXkEyXkFqcGc@._V1_SX300.jpg" alt="F9: The Fast Saga Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 5.2 / 10</p>
+            <p><b>Genres:</b> Action, Crime, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Squid Game (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTg5NjY0NGEtMDFhOS00MzJiLTg1NWEtZDhhNWQ5MmE4ZWIxXkEyXkFqcGc@._V1_SX300.jpg" alt="Squid Game Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Mystery, Thriller, Drama, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Big Lebowski (1998)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BY2E3OWQ5OWYtYTRkMC00NjVjLWIzZDQtNmRmM2ZiYTIyYmYxXkEyXkFqcGc@._V1_SX300.jpg" alt="The Big Lebowski Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Crime, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>A Silent Voice: The Movie (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTFiNzRiOWEtYTQwNy00NmRiLWE0ZWYtNTE0YjExZjFmZjkwXkEyXkFqcGc@._V1_SX300.jpg" alt="A Silent Voice: The Movie Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 8.1 / 10</p>
+            <p><b>Genres:</b> Animation, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Mad Max (1979)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTM4Mjg5ODEzMV5BMl5BanBnXkFtZTcwMDc3NDk0NA@@._V1_SX300.jpg" alt="Mad Max Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.8 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Thriller, Adventure, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Justice League (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjM5YmQxM2YtZjI2Yy00YjhhLTg5N2MtMTEyMzdlZDU3OTVhXkEyXkFqcGc@._V1_SX300.jpg" alt="Justice League Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.0 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Fantasy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Skyfall (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjAzMWNkODUtM2FlMi00NzgyLWJhMGUtMWEyNDYyZGFiN2RlXkEyXkFqcGc@._V1_SX300.jpg" alt="Skyfall Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>John Wick: Chapter 2 (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjE2NDkxNTY2M15BMl5BanBnXkFtZTgwMDc2NzE0MTI@._V1_SX300.jpg" alt="John Wick: Chapter 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Cars (2006)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTg5NzY0MzA2MV5BMl5BanBnXkFtZTYwNDc3NTc2._V1_SX300.jpg" alt="Cars Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Sport, Comedy, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Madagascar (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYjk4OGFmZmYtYWE4NC00MzM4LTkwZTItODdhMjk3NTZjMmI5XkEyXkFqcGc@._V1_SX300.jpg" alt="Madagascar Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 6.9 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Comedy, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>John Wick: Chapter 3 - Parabellum (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYjdlNWFlZjEtM2U0NS00ZWU5LTk1M2EtZmQxNWFiZjk0MGM5XkEyXkFqcGc@._V1_SX300.jpg" alt="John Wick: Chapter 3 - Parabellum Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Brave (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzgwODk3ODA1NF5BMl5BanBnXkFtZTcwNjU3NjQ0Nw@@._V1_SX300.jpg" alt="Brave Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.1 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Fantasy, Family, Comedy, Drama, Mystery, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Monsters University (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUyODgwMDU3M15BMl5BanBnXkFtZTcwOTM4MjcxOQ@@._V1_SX300.jpg" alt="Monsters University Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Adventure, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>King Kong (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMWY0NWE0ZjUtNjRlOS00ZDViLTgxNTQtMGMwN2FhNDY1YTg2XkEyXkFqcGc@._V1_SX300.jpg" alt="King Kong Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 7 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Adventure, Action, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Suicide Squad (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMWU3Y2NlZmEtMjJjNS00ZWMxLWE1MzctYWYyMjMzMDdkNTE4XkEyXkFqcGc@._V1_SX300.jpg" alt="The Suicide Squad Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Five Nights at Freddy's (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzFkMDE2ZmEtOWMwNy00MWM2LThlNjMtZWQzNWY5MTJjZjcxXkEyXkFqcGc@._V1_SX300.jpg" alt="Five Nights at Freddy's Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 5.4 / 10</p>
+            <p><b>Genres:</b> Horror, Mystery, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Captain America: Civil War (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_SX300.jpg" alt="Captain America: Civil War Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.8 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Charlie and the Chocolate Factory (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjcxMjg1Njg2NF5BMl5BanBnXkFtZTcwMjQ4NzMzMw@@._V1_SX300.jpg" alt="Charlie and the Chocolate Factory Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.7 / 10</p>
+            <p><b>Genres:</b> Musical, Adventure, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Darling in the Franxx (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYWNlYzk1NGQtNTZkNi00YzJiLWJkMWUtZTYzNjI3YTc5ZDRhXkEyXkFqcGc@._V1_SX300.jpg" alt="Darling in the Franxx Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Sci-Fi, Romance, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Alien³ (1992)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOGZiNmVlZGEtM2VmMi00ZTFkLTliMzEtZDNhYzUzNTcxMGY3XkEyXkFqcGc@._V1_SX300.jpg" alt="Alien³ Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.4 / 10</p>
+            <p><b>Genres:</b> Action, Horror, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Operation Fortune: Ruse de Guerre (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYjk3MjcwMWQtZDFmMS00NTk2LTkxYWItNWU0NzhlZTFiNTE1XkEyXkFqcGc@._V1_SX300.jpg" alt="Operation Fortune: Ruse de Guerre Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.3 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Madagascar: Escape 2 Africa (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjExMDA4NDcwMl5BMl5BanBnXkFtZTcwODAxNTQ3MQ@@._V1_SX300.jpg" alt="Madagascar: Escape 2 Africa Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Mask (1994)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNGNmNjI0ZmMtMzI5MC00ZjUyLWFlZDEtYjUyMGZlN2E3N2E2XkEyXkFqcGc@._V1_SX300.jpg" alt="The Mask Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Crime, Comedy, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Frozen (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_SX300.jpg" alt="Frozen Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.4 / 10</p>
+            <p><b>Genres:</b> Animation, Musical, Family, Fantasy, Adventure, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Monsters vs. Aliens (2009)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY0OTQ3MzE3MV5BMl5BanBnXkFtZTcwMDQyMzMzMg@@._V1_SX300.jpg" alt="Monsters vs. Aliens Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.4 / 10</p>
+            <p><b>Genres:</b> Animation, Sci-Fi, Family, Comedy, Adventure, Fantasy, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Open Season (2006)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQwOTg2MjU0OV5BMl5BanBnXkFtZTcwMzIzNTQzMQ@@._V1_SX300.jpg" alt="Open Season Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.1 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Family, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Shark Tale (2004)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTMxMjY0NzE2M15BMl5BanBnXkFtZTcwNTc3ODcyMw@@._V1_SX300.jpg" alt="Shark Tale Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.0 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Adventure, Thriller, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Flushed Away (2006)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTI1MzE1MDk2N15BMl5BanBnXkFtZTYwMjEwMzI3._V1_SX300.jpg" alt="Flushed Away Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Adventure, Romance, Action, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Batman v Superman: Dawn of Justice (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTJkYjdmYjYtOGMyNC00ZGU1LThkY2ItYTc1OTVlMmE2YWY1XkEyXkFqcGc@._V1_SX300.jpg" alt="Batman v Superman: Dawn of Justice Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Black Adam (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYmM3OTM4NDktMmI2NS00OWU0LTg4OTQtNjZhMmFkYjhmOGY1XkEyXkFqcGc@._V1_SX300.jpg" alt="Black Adam Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.2 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Fantasy, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Shang-Chi and the Legend of the Ten Rings (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZmY5MDcyNzAtYzg3MC00MGNlLTg3OGItNmRjYThkZGVlNzAyXkEyXkFqcGc@._V1_SX300.jpg" alt="Shang-Chi and the Legend of the Ten Rings Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Fantasy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Taxi 3 (2003)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzdjODU5ODQtZjkzOC00MTNiLWFhZjQtNDcyZmI1MmM2Yzg2XkEyXkFqcGc@._V1_SX300.jpg" alt="Taxi 3 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 5.8 / 10</p>
+            <p><b>Genres:</b> Comedy, Crime, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Super Mario Bros. Movie (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOGZlN2EzOTYtMzUzOS00NTM3LTg0MTQtZDVjZGM4YmJlNWNhXkEyXkFqcGc@._V1_SX300.jpg" alt="The Super Mario Bros. Movie Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Family, Comedy, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Frozen II (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTE1YjlmZjctNjIwNi00NDQ0LTlmMzgtYWZkY2RkZTMwNTdmXkEyXkFqcGc@._V1_SX300.jpg" alt="Frozen II Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.8 / 10</p>
+            <p><b>Genres:</b> Animation, Musical, Adventure, Comedy, Family, Fantasy, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Penguins of Madagascar (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTEyMDg4MDU4MjdeQTJeQWpwZ15BbWU4MDQyOTc3MjIx._V1_SX300.jpg" alt="Penguins of Madagascar Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Sci-Fi, Action, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Hotel Transylvania (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTM3NjQyODI3M15BMl5BanBnXkFtZTcwMDM4NjM0OA@@._V1_SX300.jpg" alt="Hotel Transylvania Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Angry Birds Movie (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_SX300.jpg" alt="The Angry Birds Movie Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.3 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Adventure, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Fast and the Furious: Tokyo Drift (2006)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_SX300.jpg" alt="The Fast and the Furious: Tokyo Drift Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.1 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Madagascar 3: Europe's Most Wanted (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYTM5OWRiZTAtOTNkMS00NzNhLTkwYmYtMWI1MzkyMjE3MWE1XkEyXkFqcGc@._V1_SX300.jpg" alt="Madagascar 3: Europe's Most Wanted Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.8 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Despicable Me 2 (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDExNDllYzMtZjdmOS00NWMwLWJlY2EtMDk2ZjE5MmZiOWY5XkEyXkFqcGc@._V1_SX300.jpg" alt="Despicable Me 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Sci-Fi, Adventure, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Transformers: Dark of the Moon (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTkwOTY0MTc1NV5BMl5BanBnXkFtZTcwMDQwNjA2NQ@@._V1_SX300.jpg" alt="Transformers: Dark of the Moon Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.2 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Wednesday (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BY2E1NDI5OWEtODJmYi00Nzg2LWI4MjUtODFiMTU2YWViOTU3XkEyXkFqcGc@._V1_SX300.jpg" alt="Wednesday Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 8.0 / 10</p>
+            <p><b>Genres:</b> Comedy, Fantasy, Mystery, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Zoolander (2001)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODI4NDY2NDM5M15BMl5BanBnXkFtZTgwNzEwOTMxMDE@._V1_SX300.jpg" alt="Zoolander Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Lorax (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTU1MTAwMjk1NF5BMl5BanBnXkFtZTcwMDI5NDc4Ng@@._V1_SX300.jpg" alt="The Lorax Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.4 / 10</p>
+            <p><b>Genres:</b> Animation, Musical, Family, Fantasy, Adventure, Drama, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Cars 3 (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc0NzU2OTYyN15BMl5BanBnXkFtZTgwMTkwOTg2MTI@._V1_SX300.jpg" alt="Cars 3 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.7 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Sport, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Croods: A New Age (2020)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTI1OTFhYmQtMzM4NS00Y2NkLTlkMmEtNTJhMWU1YWI0ZGQ2XkEyXkFqcGc@._V1_SX300.jpg" alt="The Croods: A New Age Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.9 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Ralph Breaks the Internet (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTYyNzEyNDAzOV5BMl5BanBnXkFtZTgwNTk3NDczNjM@._V1_SX300.jpg" alt="Ralph Breaks the Internet Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Adventure, Family, Fantasy, Sci-Fi, Sport</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Pokémon: Detective Pikachu (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDU4Mzc3NzE5NV5BMl5BanBnXkFtZTgwMzE1NzI1NzM@._V1_SX300.jpg" alt="Pokémon: Detective Pikachu Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Mystery, Family, Sci-Fi, Adventure, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Angry Birds Movie 2 (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOGJkNzYyZmYtOGJkNy00NDExLWEwOWEtZDcxYmRmYTg1YTI3XkEyXkFqcGc@._V1_SX300.jpg" alt="The Angry Birds Movie 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.4 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Adventure, Family, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Lego Movie 2: The Second Part (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTkyOTkwNDc1N15BMl5BanBnXkFtZTgwNzkyMzk3NjM@._V1_SX300.jpg" alt="The Lego Movie 2: The Second Part Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Animation, Musical, Adventure, Comedy, Family, Fantasy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Minions (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODI4NzMyNjE0MF5BMl5BanBnXkFtZTgwMTcwNzI0MzE@._V1_SX300.jpg" alt="Minions Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.4 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Adventure, Sci-Fi, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Minions: The Rise of Gru (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTAzMTkyNmQtNTMzZS00MTM1LWI4YzEtMjVlYjU0ZWI5Y2IzXkEyXkFqcGc@._V1_SX300.jpg" alt="Minions: The Rise of Gru Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Sci-Fi, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Game of Thrones (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_SX300.jpg" alt="Game of Thrones Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 9.2 / 10</p>
+            <p><b>Genres:</b> Fantasy, Drama, Adventure, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Suicide Squad (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjM1OTMxNzUyM15BMl5BanBnXkFtZTgwNjYzMTIzOTE@._V1_SX300.jpg" alt="Suicide Squad Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 5.9 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Birds of Prey and the Fantabulous Emancipation of One Harley Quinn (2020)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTgwNWEwOWMtNGIxMy00YzU5LTk2MzgtMjAzMmM1MjZiY2RiXkEyXkFqcGc@._V1_SX300.jpg" alt="Birds of Prey and the Fantabulous Emancipation of One Harley Quinn Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.1 / 10</p>
+            <p><b>Genres:</b> Action, Crime, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Venom (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTYwMDg5MDItNjhmZi00NmVmLThjNWItMmNkMjVkMWRhNzI2XkEyXkFqcGc@._V1_SX300.jpg" alt="Venom Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Ant-Man and the Wasp (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODVkY2ZmZTAtYzFhMi00YzZlLWE2YWMtMDBiYjY2OTU4ZWM0XkEyXkFqcGc@._V1_SX300.jpg" alt="Ant-Man and the Wasp Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi, Comedy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>What If...? (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYWFiOTcwNzItMTg5Mi00ZTU4LThkZWYtYWNmZWQ1ODE5ZTVmXkEyXkFqcGc@._V1_SX300.jpg" alt="What If...? Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Bumblebee (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjUwNjU5NDMyNF5BMl5BanBnXkFtZTgwNzgxNjM2NzM@._V1_SX300.jpg" alt="Bumblebee Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.7 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Amazing Spider-Man 2 (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTA5NDYxNTg0OV5BMl5BanBnXkFtZTgwODE5NzU1MTE@._V1_SX300.jpg" alt="The Amazing Spider-Man 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Finding Dory (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BY2VlYWJjMGMtYjcwZC00MDE2LThmMDItYjVlMzNhYzBhYTk5XkEyXkFqcGc@._V1_SX300.jpg" alt="Finding Dory Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.2 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Adventure, Family, Fantasy, Mystery</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Incredible Hulk (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_SX300.jpg" alt="The Incredible Hulk Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Thus Spoke Kishibe Rohan (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BM2YxM2Q0ZWYtNGZhOS00MzVlLWFiMDctMTE5ZmI4OGFmNTQyXkEyXkFqcGc@._V1_SX300.jpg" alt="Thus Spoke Kishibe Rohan Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Animation, Fantasy, Action, Adventure, Drama, Mystery, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Black Panther (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SX300.jpg" alt="Black Panther Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 7.3 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Captain Marvel (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZDI1NGU2ODAtNzBiNy00MWY5LWIyMGEtZjUxZjUwZmZiNjBlXkEyXkFqcGc@._V1_SX300.jpg" alt="Captain Marvel Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.8 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Shrek the Third (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOTgyMjc3ODk2MV5BMl5BanBnXkFtZTcwMjY0MjEzMw@@._V1_SX300.jpg" alt="Shrek the Third Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.1 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Fantasy, Adventure, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Avengers: Endgame (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" alt="Avengers: Endgame Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 8.4 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Amazing Spider-Man (2012)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjMyOTM4MDMxNV5BMl5BanBnXkFtZTcwNjIyNzExOA@@._V1_SX300.jpg" alt="The Amazing Spider-Man Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 6 / 10</p>
+            <p><b>IMDb:</b> 6.9 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Divergent (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTYxMzYwODE4OV5BMl5BanBnXkFtZTgwNDE5MzE2MDE@._V1_SX300.jpg" alt="Divergent Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Mystery, Sci-Fi, Adventure, Action, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Alien Resurrection (1997)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDMyNmU5ZGQtNzhiZi00NjRjLTk3NGUtMmQ5YWU4ODlkNTBhXkEyXkFqcGc@._V1_SX300.jpg" alt="Alien Resurrection Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.2 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Horror, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Barbie (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDU0ZGYtYjA2YS00Y2RlLTgwZDAtYTE2YTM5ZjE1M2JlXkEyXkFqcGc@._V1_SX300.jpg" alt="Barbie Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.8 / 10</p>
+            <p><b>Genres:</b> Comedy, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Open Season 3 (2010)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMGI4YTk5MzktMTA3Mi00ZmZkLWFiNzUtOWEwMDUwMTY5Mjk3XkEyXkFqcGc@._V1_SX300.jpg" alt="Open Season 3 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 5.0 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Open Season 2 (2008)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTU4OTI5MTU4Nl5BMl5BanBnXkFtZTgwMTQ1ODA4MDE@._V1_SX300.jpg" alt="Open Season 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 5.5 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Sonic the Hedgehog 2 (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMDBiYzk0YTMtNWRiYi00YWY0LWE3NjgtYmJiYTAwZmYzOTM0XkEyXkFqcGc@._V1_SX300.jpg" alt="Sonic the Hedgehog 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Comedy, Sci-Fi, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Sonic the Hedgehog (2020)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYTg2Yjc5MzItNzVmMi00MTllLWI2MDQtOTYyOWNjYWIxNzEzXkEyXkFqcGc@._V1_SX300.jpg" alt="Sonic the Hedgehog Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Bloodshot (2020)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDFjMTI4ZTQtYzNlNS00YmJiLWEyYzYtYWFiYTZjOTI5MDM1XkEyXkFqcGc@._V1_SX300.jpg" alt="Bloodshot Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 5.7 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Taxi 4 (2007)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYTJhY2RmNzUtMDk3ZS00ZDI4LWI3M2YtOTVmOGE5MDg5YjIxXkEyXkFqcGc@._V1_SX300.jpg" alt="Taxi 4 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 5.6 / 10</p>
+            <p><b>Genres:</b> Action, Comedy, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Cars 2 (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUzNTc3MTU3M15BMl5BanBnXkFtZTcwMzIxNTc3NA@@._V1_SX300.jpg" alt="Cars 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.2 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Adventure, Family, Sport, Crime, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Kaguya-sama: Love is War (2019)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTM1ZWViNWMtZWY2ZC00YmYyLTk1ZGEtMzRjOWI2YTM1OTI3XkEyXkFqcGc@._V1_SX300.jpg" alt="Kaguya-sama: Love is War Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 8.5 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Thor: Love and Thunder (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjRiMDhiZjQtNjk5Yi00ZDcwLTkyYTEtMDc1NjdmNjFhNGIzXkEyXkFqcGc@._V1_SX300.jpg" alt="Thor: Love and Thunder Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.2 / 10</p>
+            <p><b>Genres:</b> Adventure, Romance, Sci-Fi, Comedy, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Transformers: The Last Knight (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYWNlNjU3ZTItYTY3Mi00YTU1LTk4NjQtYjQ3MjFiNjcyODliXkEyXkFqcGc@._V1_SX300.jpg" alt="Transformers: The Last Knight Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 5.2 / 10</p>
+            <p><b>Genres:</b> Action, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Transformers: Age of Extinction (2014)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjEwNTg1MTA5Nl5BMl5BanBnXkFtZTgwOTg2OTM4MTE@._V1_SX300.jpg" alt="Transformers: Age of Extinction Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 5.6 / 10</p>
+            <p><b>Genres:</b> Sci-Fi, Action, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Cat in the Hat (2003)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTI5MDU3MTYyMF5BMl5BanBnXkFtZTYwODgyODc3._V1_SX300.jpg" alt="The Cat in the Hat Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 4.1 / 10</p>
+            <p><b>Genres:</b> Fantasy, Family, Comedy, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2YxZGRjMzYtZjE1ZC00MDI0LThjZmQtZTZmMzVmMmQ2NzBmXkEyXkFqcGc@._V1_SX300.jpg" alt="Doctor Strange in the Multiverse of Madness Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.9 / 10</p>
+            <p><b>Genres:</b> Action, Fantasy, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Turbo (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTA4NTgwMjM5MzheQTJeQWpwZ15BbWU3MDg2ODA1ODk@._V1_SX300.jpg" alt="Turbo Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.4 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Adventure, Comedy, Sport</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Teenage Mutant Ninja Turtles: Out of the Shadows (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZDgyNWExMzUtOTAyMy00ZjkzLWFhNzgtZTFhOTBmN2RhZGJhXkEyXkFqcGc@._V1_SX300.jpg" alt="Teenage Mutant Ninja Turtles: Out of the Shadows Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 5.9 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Comedy, Sci-Fi, Crime, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Free Guy (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2I0MGMxYjUtZTZiMS00MzMxLTkzNWYtMDUyZmUwY2ViYTljXkEyXkFqcGc@._V1_SX300.jpg" alt="Free Guy Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 7.1 / 10</p>
+            <p><b>Genres:</b> Action, Comedy, Sci-Fi, Adventure, Fantasy, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Venom: Let There Be Carnage (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZGIxMTU1MjItM2FmMi00YmFiLTgwNDMtMTczYmVjYTBhNGZhXkEyXkFqcGc@._V1_SX300.jpg" alt="Venom: Let There Be Carnage Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 5.9 / 10</p>
+            <p><b>Genres:</b> Action, Thriller, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Kung Fu Panda: Legends of Awesomeness (2011)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTRkNDkzMTktNjJiZi00MGMyLWI5YjItY2JmNjM0ZjNlZDU1XkEyXkFqcGc@._V1_SX300.jpg" alt="Kung Fu Panda: Legends of Awesomeness Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Animation, Family, Action, Comedy, Adventure, Fantasy, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Pirates of the Caribbean: Dead Men Tell No Tales (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTYyMTcxNzc5M15BMl5BanBnXkFtZTgwOTg2ODE2MTI@._V1_SX300.jpg" alt="Pirates of the Caribbean: Dead Men Tell No Tales Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 5 / 10</p>
+            <p><b>IMDb:</b> 6.5 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Despicable Me 3 (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjUyNzQ2MTg3Ml5BMl5BanBnXkFtZTgwNzE4NDM3MTI@._V1_SX300.jpg" alt="Despicable Me 3 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 4 / 10</p>
+            <p><b>IMDb:</b> 6.3 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Sci-Fi, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Son of the Mask (2005)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTIxNzA5NzIzOV5BMl5BanBnXkFtZTcwOTc5NzcyMQ@@._V1_SX300.jpg" alt="Son of the Mask Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 3 / 10</p>
+            <p><b>IMDb:</b> 2.3 / 10</p>
+            <p><b>Genres:</b> Comedy, Fantasy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Wish (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2UyZTAxZDctODI5Mi00MDczLWI4OWMtNTliZjEyMmEyN2FkXkEyXkFqcGc@._V1_SX300.jpg" alt="Wish Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 5.6 / 10</p>
+            <p><b>Genres:</b> Animation, Musical, Fantasy, Comedy, Adventure, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Madame Web (2024)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BODViOTZiOTQtOTc4ZC00ZjUxLWEzMjItY2ExMmNlNDliNjE4XkEyXkFqcGc@._V1_SX300.jpg" alt="Madame Web Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 4.0 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Flash (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYmE2NzBjNGUtNTJiMy00N2UxLWEyYzMtYzFjODFhMGZlOTgzXkEyXkFqcGc@._V1_SX300.jpg" alt="The Flash Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Fantasy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Marvels (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYzczOWM4MzItMWMyOS00ZDczLWIxMzctNzBmYTgzOTI1MzI3XkEyXkFqcGc@._V1_SX300.jpg" alt="The Marvels Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 5.5 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Black Widow (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTMyZTA0ZTItYjY3Yi00ODNjLWExYTgtYzgxZTk0NTg0Y2FlXkEyXkFqcGc@._V1_SX300.jpg" alt="Black Widow Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Hawkeye (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BOGU5ZDBlOTAtOTZmYS00MWE0LTg0NzktNDcxZGJhN2FhZmM2XkEyXkFqcGc@._V1_SX300.jpg" alt="Hawkeye Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 7.5 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Crime, Mystery, Sci-Fi, Drama</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Arthur, malédiction (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNWU0YTNjYWQtMzBhMC00OTUyLTk0ZTYtMTNiYzM1MDBjOGNhXkEyXkFqcGc@._V1_SX300.jpg" alt="Arthur, malédiction Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 3.3 / 10</p>
+            <p><b>Genres:</b> Horror, Thriller</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Attack on Titan (2013)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjY4MDQxZTItM2JjMi00NjM5LTk0MWYtOTBlNTY2YjBiNmFjXkEyXkFqcGc@._V1_SX300.jpg" alt="Attack on Titan Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 9.1 / 10</p>
+            <p><b>Genres:</b> Animation, Fantasy, Horror, Adventure, Drama, Action</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Hotel Transylvania 2 (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BY2ExYWJhMDYtYjcwMy00YjA2LTk2YzQtY2FhMWYxZThiNDQzXkEyXkFqcGc@._V1_SX300.jpg" alt="Hotel Transylvania 2 Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.6 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Fantasy, Adventure, Romance</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Boss Baby: Back in the Crib (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYTA1MDQ5NTYtNTYwZi00MzE1LWIzMTktNzllM2EyOGExOThmXkEyXkFqcGc@._V1_SX300.jpg" alt="The Boss Baby: Back in the Crib Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 5.9 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Family, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Boss Baby: Family Business (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZjJiYjgzMzctZmE5OC00ODA2LWE1MzktZDdlMDFiNmM5OGQ1XkEyXkFqcGc@._V1_SX300.jpg" alt="The Boss Baby: Family Business Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 5.9 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Fantasy, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>The Boss Baby (2017)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTg5MzUxNzgxNV5BMl5BanBnXkFtZTgwMTM2NzQ3MjI@._V1_SX300.jpg" alt="The Boss Baby Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.3 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Fantasy, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Eternals (2021)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZTBiZjI2M2UtZTNiNy00NmU4LWJiMjYtZjk4MDIzMzhlMjFlXkEyXkFqcGc@._V1_SX300.jpg" alt="Eternals Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.2 / 10</p>
+            <p><b>Genres:</b> Action, Fantasy, Sci-Fi, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Ant-Man and the Wasp: Quantumania (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMThkYWY5ZjQtYjJlMS00MDFmLWFkYzEtODEzZjg5YWFmMGY4XkEyXkFqcGc@._V1_SX300.jpg" alt="Ant-Man and the Wasp: Quantumania Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.0 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Comedy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Velma (2023)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BYzAwOGI4ZDEtNDlkZC00MWVmLWE4MTAtNWZmZWNiYjY1ZDNkXkEyXkFqcGc@._V1_SX300.jpg" alt="Velma Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 1.6 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Comedy, Crime, Mystery, Horror</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Pixels (2015)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzIyNTc1NmUtOTBlNS00YzEwLTlkZTMtZjJkMGM2YzNkYmY3XkEyXkFqcGc@._V1_SX300.jpg" alt="Pixels Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 5.6 / 10</p>
+            <p><b>Genres:</b> Comedy, Action, Sci-Fi, Fantasy</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Hotel Transylvania 3: Summer Vacation (2018)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjA1MzU5MTY3OF5BMl5BanBnXkFtZTgwNTU5MDA3NTM@._V1_SX300.jpg" alt="Hotel Transylvania 3: Summer Vacation Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.3 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Fantasy, Family, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Surf's Up 2: WaveMania (2016)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMmY0MWJhNzYtMWE0ZC00YzUxLTg0ZDMtODE1NjJlZDNlZmFkXkEyXkFqcGdeQXVyMTA5ODEyNTc5._V1_SX300.jpg" alt="Surf's Up 2: WaveMania Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 4.4 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Family, Sport, Adventure</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>DC League of Super-Pets (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BY2RkOTM1ZTQtNWQ3NS00YzdjLWIyMmQtYzMzNzI2ZjQwZjlmXkEyXkFqcGc@._V1_SX300.jpg" alt="DC League of Super-Pets Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 7.0 / 10</p>
+            <p><b>Genres:</b> Animation, Action, Comedy, Family, Adventure, Fantasy, Sci-Fi, Crime</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Lightyear (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BZGI3ZjUyM2ItNmFjYy00NGE3LTg2OTYtMTI2MDk0MjIxNDA1XkEyXkFqcGc@._V1_SX300.jpg" alt="Lightyear Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.1 / 10</p>
+            <p><b>Genres:</b> Animation, Adventure, Sci-Fi, Action, Comedy, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>I Am Groot (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMzBlODMyZGQtN2QzOS00MDAzLWFjOGQtMGRjN2JmZWM0NWJkXkEyXkFqcGc@._V1_SX300.jpg" alt="I Am Groot Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.7 / 10</p>
+            <p><b>Genres:</b> Animation, Short, Action, Adventure, Comedy, Fantasy, Sci-Fi</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Ms. Marvel (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BNzlkNjBmOWUtOTgzZS00OWIzLThkNWEtZTg5MGY2ODAyYzZjXkEyXkFqcGc@._V1_SX300.jpg" alt="Ms. Marvel Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.2 / 10</p>
+            <p><b>Genres:</b> Action, Adventure, Comedy, Crime, Drama, Fantasy, Mystery, Sci-Fi, Family</p>
+        </div>
+    
+        <div class="movie-card">
+            <h3>Chip 'n Dale: Rescue Rangers (2022)</h3>
+            <img src="https://m.media-amazon.com/images/M/MV5BMjIzY2Q1ZWYtOGQ0Yi00NTllLTkzYzgtMWZlZmY2NGViYzNhXkEyXkFqcGc@._V1_SX300.jpg" alt="Chip 'n Dale: Rescue Rangers Poster" onerror="this.style.display='none'">
+            <p><b>My Rating:</b> 1 / 10</p>
+            <p><b>IMDb:</b> 6.9 / 10</p>
+            <p><b>Genres:</b> Animation, Comedy, Adventure, Family, Mystery, Crime, Fantasy, Action, Sci-Fi</p>
+        </div>
+    
+    </div>
+</body>
 </html>
